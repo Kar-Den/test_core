@@ -11,6 +11,7 @@ public class CapacityStraight {
     public CapacityStraight(Figure figureBase, double areaFigureBase) {
         this.figureBase = figureBase;
         volume = areaFigureBase*HEIGHT;
+
     }
 
     public double fillIn (FluidType fluidType){

@@ -5,8 +5,8 @@ public enum FluidType {
     KEROSENE (820, "керосин"),
     MACHINE_OIL (910, "машинное масло");
 
-    private int density;
-    private String type;
+    int density;
+    String type;
 
     FluidType(int density, String type) {
         this.density = density;
