@@ -1,6 +1,6 @@
-package by.itacademy.test3.interfaces;
+package by.itacademy.interfaces;
 
-import by.itacademy.test3.type.FluidType;
+import by.itacademy.type.FluidType;
 
 public interface Mass {
     double COEFFICIENT = 0.95;

@@ -1,30 +1,30 @@
 package by.itacademy;
 
-import by.itacademy.test3.type.FluidType;
+import by.itacademy.comparator.FigureComparator;
+import by.itacademy.figure.Figure;
+import by.itacademy.type.FluidType;
+import by.itacademy.figure.impl.SquareStraight;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
-
     public static void main(String[] args) {
+        List<Figure> figureList = new ArrayList<>();
+
+        Figure squareStraight = new SquareStraight(2L, FluidType.MACHINE_OIL);
+        figureList.add(squareStraight);
+
+        Figure squareStraight1 = new SquareStraight(3L, FluidType.MACHINE_OIL);
+        figureList.add(squareStraight1);
+
+        Figure squareStraight2 = new SquareStraight(3L, FluidType.MACHINE_OIL);
+        figureList.add(squareStraight2);
 
 
-        CapacityStraight capacityStraightSquareBase = new CapacityStraight(Figure.SQUARE,
-                Figure.SQUARE.area(2.0));
-        capacityStraightSquareBase.fillIn(FluidType.KEROSENE);
-        System.out.println(capacityStraightSquareBase.toString());
-
-        CapacityStraight capacityStraightISOSCELES_TRAPEZOID = new
-                CapacityStraight(Figure.ISOSCELES_TRAPEZOID, Figure.ISOSCELES_TRAPEZOID.area(2.0, 3.0, 2.0));
-        capacityStraightISOSCELES_TRAPEZOID.fillIn(FluidType.PETROL);
-        System.out.println(capacityStraightISOSCELES_TRAPEZOID.toString());
 
 
-        CapacityInclined capacityInclinedSquare = new CapacityInclined(Figure.SQUARE,
-                Figure.SQUARE.area(2.0),
-                Figure.SQUARE.area(3.0));
-        capacityInclinedSquare.fillIn(FluidType.MACHINE_OIL);
-        System.out.println(capacityInclinedSquare.toString());
-
-
+        figureList.sort(new FigureComparator());
+        figureList.forEach(System.out::println);
     }
-
 }

@@ -1,6 +1,6 @@
-package by.itacademy.test3.comparator;
+package by.itacademy.comparator;
 
-import by.itacademy.test3.figure.Figure;
+import by.itacademy.figure.Figure;
 
 import java.util.Comparator;
 

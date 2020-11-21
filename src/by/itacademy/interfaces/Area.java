@@ -1,4 +1,4 @@
-package by.itacademy.test3.interfaces;
+package by.itacademy.interfaces;
 
 public interface Area {
 

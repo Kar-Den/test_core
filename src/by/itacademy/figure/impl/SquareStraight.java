@@ -1,7 +1,7 @@
-package by.itacademy.test3.figure.impl;
+package by.itacademy.figure.impl;
 
-import by.itacademy.test3.figure.Figure;
-import by.itacademy.test3.type.FluidType;
+import by.itacademy.figure.Figure;
+import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 

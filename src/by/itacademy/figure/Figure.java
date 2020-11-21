@@ -1,9 +1,9 @@
-package by.itacademy.test3.figure;
+package by.itacademy.figure;
 
-import by.itacademy.test3.interfaces.Area;
-import by.itacademy.test3.interfaces.Mass;
-import by.itacademy.test3.interfaces.Volume;
-import by.itacademy.test3.type.FluidType;
+import by.itacademy.interfaces.Area;
+import by.itacademy.interfaces.Mass;
+import by.itacademy.interfaces.Volume;
+import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 

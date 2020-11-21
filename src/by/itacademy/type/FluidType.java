@@ -1,4 +1,4 @@
-package by.itacademy.test3.type;
+package by.itacademy.type;
 
 public enum FluidType {
     PETROL (740L, "бензин"),
