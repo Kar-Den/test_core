@@ -1,5 +1,7 @@
 package by.itacademy;
 
+import by.itacademy.test3.type.FluidType;
+
 public class CapacityStraight {
 
     private final int HEIGHT = 2; //высота в метрах

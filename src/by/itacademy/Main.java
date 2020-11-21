@@ -1,5 +1,7 @@
 package by.itacademy;
 
+import by.itacademy.test3.type.FluidType;
+
 public class Main {
 
     public static void main(String[] args) {
