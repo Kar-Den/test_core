@@ -1,14 +1,14 @@
-package by.itacademy.figure.impl.Inclinde;
+package by.itacademy.figure.impl.Inclined;
 
 import by.itacademy.figure.Figure;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class RegularHexagonInclinde extends Figure {
+public class RegularHexagonInclined extends Figure {
     private final double a1, a2;
 
-    public RegularHexagonInclinde(double a1, double a2, FluidType fluidType) {
+    public RegularHexagonInclined(double a1, double a2, FluidType fluidType) {
         super(fluidType);
         this.a1 = a1;
         this.a2 = a2;

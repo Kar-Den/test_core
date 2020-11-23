@@ -1,4 +1,4 @@
-package by.itacademy.figure.impl.Inclinde;
+package by.itacademy.figure.impl.Inclined;
 
 import by.itacademy.figure.Figure;
 import by.itacademy.type.FluidType;

@@ -1,15 +1,15 @@
-package by.itacademy.figure.impl.Inclinde;
+package by.itacademy.figure.impl.Inclined;
 
 import by.itacademy.figure.Figure;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class IsoscelesTrapezoidInclinde extends Figure {
+public class IsoscelesTrapezoidInclined extends Figure {
     private final double a1, b1, h1,
             a2, b2, h2;
 
-    public IsoscelesTrapezoidInclinde(double a1, double b1, double h1,
+    public IsoscelesTrapezoidInclined(double a1, double b1, double h1,
                                       double a2, double b2, double h2, FluidType fluidType) {
         super(fluidType);
         this.a1 = a1;

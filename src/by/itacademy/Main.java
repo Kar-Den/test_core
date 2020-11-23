@@ -2,11 +2,11 @@ package by.itacademy;
 
 import by.itacademy.comparator.FigureComparator;
 import by.itacademy.figure.Figure;
-import by.itacademy.figure.impl.Inclinde.CircleInclined;
-import by.itacademy.figure.impl.Inclinde.IsoscelesTrapezoidInclinde;
-import by.itacademy.figure.impl.Inclinde.RegularHexagonInclinde;
+import by.itacademy.figure.impl.Inclined.CircleInclined;
+import by.itacademy.figure.impl.Inclined.IsoscelesTrapezoidInclined;
+import by.itacademy.figure.impl.Inclined.RegularHexagonInclined;
 import by.itacademy.figure.impl.Straight.*;
-import by.itacademy.figure.impl.Inclinde.SquareInclined;
+import by.itacademy.figure.impl.Inclined.SquareInclined;
 import by.itacademy.type.FluidType;
 
 import java.util.ArrayList;
@@ -34,20 +34,20 @@ public class Main {
         Figure isoscelesTrapezoidStraight = new IsoscelesTrapezoidStraight(2L, 3L, 2L, FluidType.MACHINE_OIL);
         figureList.add(isoscelesTrapezoidStraight);
 
-        Figure isoscelesTrapezoidInclinde = new IsoscelesTrapezoidInclinde(2L, 3L, 2L, 3L, 4L, 2L, FluidType.MACHINE_OIL);
-        figureList.add(isoscelesTrapezoidInclinde);
+        Figure isoscelesTrapezoidInclined = new IsoscelesTrapezoidInclined(2L, 3L, 2L, 3L, 4L, 2L, FluidType.MACHINE_OIL);
+        figureList.add(isoscelesTrapezoidInclined);
 
         Figure regularHexagonStraight = new RegularHexagonStraight(2L, FluidType.PETROL);
         figureList.add(regularHexagonStraight);
 
-        Figure regularHexagonInclinde = new RegularHexagonInclinde(2L, 3L, FluidType.KEROSENE);
-        figureList.add(regularHexagonInclinde);
+        Figure regularHexagonInclined = new RegularHexagonInclined(2L, 3L, FluidType.KEROSENE);
+        figureList.add(regularHexagonInclined);
 
         Figure circleStraight = new CircleStraight(2L, FluidType.MACHINE_OIL);
         figureList.add(circleStraight);
 
-        Figure circleInclinde = new CircleInclined(2L, 3L, FluidType.PETROL);
-        figureList.add(circleInclinde);
+        Figure circleInclined = new CircleInclined(2L, 3L, FluidType.PETROL);
+        figureList.add(circleInclined);
 
 
         figureList.sort(new FigureComparator());
