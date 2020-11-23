@@ -5,17 +5,18 @@ import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class SquareStraight extends Figure {
-    private final double a;
+public class SquareInclined extends Figure {
+    double a1, a2;
 
-    public SquareStraight(double a, FluidType fluidType) {
+    public SquareInclined(double a1, double a2, FluidType fluidType) {
         super(fluidType);
-        this.a = a;
+        this.a1 = a1;
+        this.a2 = a2;
     }
 
     @Override
     public double[] area() {
-        return new double[]{square(a)};
+        return new double[] {square(a1), square(a2)};
     }
 
     @Override
@@ -32,7 +33,8 @@ public class SquareStraight extends Figure {
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + " a = %.2f",
-                a);
+                super.toString() + " a1 = %.2f, a2 = %-12.2f",
+                a1, a2);
     }
+
 }

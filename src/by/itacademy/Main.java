@@ -2,6 +2,7 @@ package by.itacademy;
 
 import by.itacademy.comparator.FigureComparator;
 import by.itacademy.figure.Figure;
+import by.itacademy.figure.impl.SquareInclined;
 import by.itacademy.type.FluidType;
 import by.itacademy.figure.impl.SquareStraight;
 
@@ -21,6 +22,8 @@ public class Main {
         Figure squareStraight2 = new SquareStraight(3L, FluidType.MACHINE_OIL);
         figureList.add(squareStraight2);
 
+        Figure squareInclined = new SquareInclined(2L, 3L, FluidType.PETROL);
+        figureList.add(squareInclined);
 
 
 
