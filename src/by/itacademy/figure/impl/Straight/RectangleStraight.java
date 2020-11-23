@@ -1,4 +1,4 @@
-package by.itacademy.figure.impl;
+package by.itacademy.figure.impl.Straight;
 
 import by.itacademy.figure.Figure;
 import by.itacademy.type.FluidType;
@@ -16,7 +16,7 @@ public class RectangleStraight extends Figure {
 
     @Override
     public double[] area() {
-        return new double[]{square(a), square(b)};
+        return new double[]{rectangle(a, b)};
     }
 
     @Override

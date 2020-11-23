@@ -2,10 +2,11 @@ package by.itacademy;
 
 import by.itacademy.comparator.FigureComparator;
 import by.itacademy.figure.Figure;
-import by.itacademy.figure.impl.RectangleStraight;
-import by.itacademy.figure.impl.SquareInclined;
+import by.itacademy.figure.impl.Straight.IsoscelesTrapezoidStraight;
+import by.itacademy.figure.impl.Straight.RectangleStraight;
+import by.itacademy.figure.impl.Inclinde.SquareInclined;
 import by.itacademy.type.FluidType;
-import by.itacademy.figure.impl.SquareStraight;
+import by.itacademy.figure.impl.Straight.SquareStraight;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,6 +29,9 @@ public class Main {
 
         Figure rectangleStraight = new RectangleStraight(2L, 3L, FluidType.KEROSENE);
         figureList.add(rectangleStraight);
+
+        Figure isoscelesTrapezoidStraight = new IsoscelesTrapezoidStraight(2L, 3L, 2L, FluidType.MACHINE_OIL);
+        figureList.add(isoscelesTrapezoidStraight);
 
 
 

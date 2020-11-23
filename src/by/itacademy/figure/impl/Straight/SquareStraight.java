@@ -1,4 +1,4 @@
-package by.itacademy.figure.impl;
+package by.itacademy.figure.impl.Straight;
 
 import by.itacademy.figure.Figure;
 import by.itacademy.type.FluidType;
