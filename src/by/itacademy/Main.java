@@ -2,6 +2,7 @@ package by.itacademy;
 
 import by.itacademy.comparator.FigureComparator;
 import by.itacademy.figure.Figure;
+import by.itacademy.figure.impl.Inclinde.IsoscelesTrapezoidInclinde;
 import by.itacademy.figure.impl.Straight.IsoscelesTrapezoidStraight;
 import by.itacademy.figure.impl.Straight.RectangleStraight;
 import by.itacademy.figure.impl.Inclinde.SquareInclined;
@@ -32,6 +33,10 @@ public class Main {
 
         Figure isoscelesTrapezoidStraight = new IsoscelesTrapezoidStraight(2L, 3L, 2L, FluidType.MACHINE_OIL);
         figureList.add(isoscelesTrapezoidStraight);
+
+        Figure isoscelesTrapezoidInclinde = new IsoscelesTrapezoidInclinde(2L, 3L, 2L, 3L, 4L, 2L, FluidType.MACHINE_OIL);
+        figureList.add(isoscelesTrapezoidInclinde);
+
 
 
 
