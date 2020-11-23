@@ -2,11 +2,10 @@ package by.itacademy.figure.impl;
 
 import by.itacademy.figure.Figure;
 import by.itacademy.type.FluidType;
-
 import java.util.Locale;
 
 public class SquareInclined extends Figure {
-    double a1, a2;
+    private final double a1, a2;
 
     public SquareInclined(double a1, double a2, FluidType fluidType) {
         super(fluidType);
@@ -17,16 +16,6 @@ public class SquareInclined extends Figure {
     @Override
     public double[] area() {
         return new double[] {square(a1), square(a2)};
-    }
-
-    @Override
-    public double volume() {
-        return volume(area());
-    }
-
-    @Override
-    public double mass() {
-        return mass(fluidType, volume());
     }
 
     @Override

@@ -14,6 +14,16 @@ public abstract class Figure implements Area, Volume, Mass {
         this.fluidType = fluidType;
     }
 
+    @Override
+    public double volume() {
+        return volume(area());
+    }
+
+    @Override
+    public double mass() {
+        return mass(fluidType, volume());
+    }
+
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),

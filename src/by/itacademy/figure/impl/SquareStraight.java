@@ -2,7 +2,6 @@ package by.itacademy.figure.impl;
 
 import by.itacademy.figure.Figure;
 import by.itacademy.type.FluidType;
-
 import java.util.Locale;
 
 public class SquareStraight extends Figure {
@@ -16,16 +15,6 @@ public class SquareStraight extends Figure {
     @Override
     public double[] area() {
         return new double[]{square(a)};
-    }
-
-    @Override
-    public double volume() {
-        return volume(area());
-    }
-
-    @Override
-    public double mass() {
-        return mass(fluidType, volume());
     }
 
     @Override
