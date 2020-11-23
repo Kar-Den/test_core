@@ -3,9 +3,11 @@ package by.itacademy;
 import by.itacademy.comparator.FigureComparator;
 import by.itacademy.figure.Figure;
 import by.itacademy.figure.impl.Inclinde.IsoscelesTrapezoidInclinde;
+import by.itacademy.figure.impl.Inclinde.RegularHexagonInclinde;
 import by.itacademy.figure.impl.Straight.IsoscelesTrapezoidStraight;
 import by.itacademy.figure.impl.Straight.RectangleStraight;
 import by.itacademy.figure.impl.Inclinde.SquareInclined;
+import by.itacademy.figure.impl.Straight.RegularHexagonStraight;
 import by.itacademy.type.FluidType;
 import by.itacademy.figure.impl.Straight.SquareStraight;
 
@@ -36,6 +38,12 @@ public class Main {
 
         Figure isoscelesTrapezoidInclinde = new IsoscelesTrapezoidInclinde(2L, 3L, 2L, 3L, 4L, 2L, FluidType.MACHINE_OIL);
         figureList.add(isoscelesTrapezoidInclinde);
+
+        Figure regularHexagonStraight = new RegularHexagonStraight(2L, FluidType.PETROL);
+        figureList.add(regularHexagonStraight);
+
+        Figure regularHexagonInclinde = new RegularHexagonInclinde(2L, 3L, FluidType.KEROSENE);
+        figureList.add(regularHexagonInclinde);
 
 
 
