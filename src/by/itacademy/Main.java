@@ -2,14 +2,12 @@ package by.itacademy;
 
 import by.itacademy.comparator.FigureComparator;
 import by.itacademy.figure.Figure;
+import by.itacademy.figure.impl.Inclinde.CircleInclined;
 import by.itacademy.figure.impl.Inclinde.IsoscelesTrapezoidInclinde;
 import by.itacademy.figure.impl.Inclinde.RegularHexagonInclinde;
-import by.itacademy.figure.impl.Straight.IsoscelesTrapezoidStraight;
-import by.itacademy.figure.impl.Straight.RectangleStraight;
+import by.itacademy.figure.impl.Straight.*;
 import by.itacademy.figure.impl.Inclinde.SquareInclined;
-import by.itacademy.figure.impl.Straight.RegularHexagonStraight;
 import by.itacademy.type.FluidType;
-import by.itacademy.figure.impl.Straight.SquareStraight;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,7 +43,11 @@ public class Main {
         Figure regularHexagonInclinde = new RegularHexagonInclinde(2L, 3L, FluidType.KEROSENE);
         figureList.add(regularHexagonInclinde);
 
+        Figure circleStraight = new CircleStraight(2L, FluidType.MACHINE_OIL);
+        figureList.add(circleStraight);
 
+        Figure circleInclinde = new CircleInclined(2L, 3L, FluidType.PETROL);
+        figureList.add(circleInclinde);
 
 
         figureList.sort(new FigureComparator());
