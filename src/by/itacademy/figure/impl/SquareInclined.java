@@ -22,7 +22,7 @@ public class SquareInclined extends Figure {
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + " a1 = %.2f, a2 = %-12.2f",
+                super.toString() + "a1 = %-8.2f a2 = %.2f",
                 a1, a2);
     }
 
