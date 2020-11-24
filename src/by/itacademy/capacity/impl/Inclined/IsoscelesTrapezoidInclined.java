@@ -39,7 +39,7 @@ public class IsoscelesTrapezoidInclined extends Capacity implements Inclineble {
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + " a1 = %-8.2f b1 = %-8.2f h1 =%-8.2f a2 = %-8.2f b2 = %-8.2f h2 =%.2f",
+                super.toString() + " a1 = %-8.2f b1 = %-8.2f h1 = %-8.2f a2 = %-8.2f b2 = %-8.2f h2 =%.2f",
                 a1, b1, h1, a2, b2, h2);
     }
 }

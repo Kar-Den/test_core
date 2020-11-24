@@ -27,7 +27,7 @@ public class CircleStraight extends Capacity {
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + " r = %-8.2f",
+                super.toString() + " r  = %-8.2f",
                 r);
     }
 }

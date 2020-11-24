@@ -27,7 +27,7 @@ public class SquareStraight extends Capacity {
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + " a = %-8.2f",
+                super.toString() + " a  = %-8.2f",
                 a);
     }
 }

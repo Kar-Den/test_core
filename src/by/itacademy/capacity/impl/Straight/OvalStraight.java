@@ -28,7 +28,7 @@ public class OvalStraight extends Capacity {
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + " a = %-8.2f b = %.2f",
+                super.toString() + " a  = %-8.2f b = %.2f",
                 a, b);
     }
 }

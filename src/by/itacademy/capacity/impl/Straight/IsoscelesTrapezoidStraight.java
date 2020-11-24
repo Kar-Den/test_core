@@ -29,7 +29,7 @@ public class IsoscelesTrapezoidStraight extends Capacity {
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + " a = %-8.2f b = %-8.2f h =%.2f",
+                super.toString() + " a  = %-8.2f b  = %-8.2f h  = %.2f",
                 a, b, h);
     }
 }
