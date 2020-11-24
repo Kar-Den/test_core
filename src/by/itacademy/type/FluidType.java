@@ -20,4 +20,6 @@ public enum FluidType {
     public String getType() {
         return type;
     }
+
+
 }

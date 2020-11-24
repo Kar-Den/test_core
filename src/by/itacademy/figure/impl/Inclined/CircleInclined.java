@@ -1,11 +1,12 @@
 package by.itacademy.figure.impl.Inclined;
 
 import by.itacademy.figure.Figure;
+import by.itacademy.interfaces.Inclineble;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class CircleInclined extends Figure {
+public class CircleInclined extends Figure implements Inclineble {
     private final double r1, r2;
 
     public CircleInclined(double r1, double r2, FluidType fluidType) {
@@ -15,13 +16,17 @@ public class CircleInclined extends Figure {
     }
 
     @Override
-    public double[] area() {
-        return new double[]{circle(r1), circle(r2)};
+    public double areaBase() {
+        return circle(r1);
+    }
+
+    public double areaTop() {
+        return circle(r2);
     }
 
     @Override
     public double volume() {
-        return volume(area()[0], area()[1]);
+        return volume(areaBase(), areaTop());
     }
 
     @Override
@@ -31,5 +36,4 @@ public class CircleInclined extends Figure {
                 super.toString() + " r1 = %-8.2f r2 = %.2f",
                 r1, r2);
     }
-
 }

@@ -1,11 +1,12 @@
 package by.itacademy.figure.impl.Inclined;
 
 import by.itacademy.figure.Figure;
+import by.itacademy.interfaces.Inclineble;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class IsoscelesTrapezoidInclined extends Figure {
+public class IsoscelesTrapezoidInclined extends Figure implements Inclineble {
     private final double a1, b1, h1,
             a2, b2, h2;
 
@@ -21,13 +22,17 @@ public class IsoscelesTrapezoidInclined extends Figure {
     }
 
     @Override
-    public double[] area() {
-        return new double[]{isoscelesTrapezoid(a1, b1, h1), isoscelesTrapezoid(a2, b2, h2)};
+    public double areaBase() {
+        return isoscelesTrapezoid(a1, b2, h1);
+    }
+
+    public double areaTop() {
+        return isoscelesTrapezoid(a2, b2, h2);
     }
 
     @Override
     public double volume() {
-        return volume(area()[0], area()[1]);
+        return volume(areaBase(), areaTop());
     }
 
     @Override
@@ -37,5 +42,4 @@ public class IsoscelesTrapezoidInclined extends Figure {
                 super.toString() + " a1 = %-8.2f b1 = %-8.2f h1 =%-8.2f a2 = %-8.2f b2 = %-8.2f h2 =%.2f",
                 a1, b1, h1, a2, b2, h2);
     }
-
 }

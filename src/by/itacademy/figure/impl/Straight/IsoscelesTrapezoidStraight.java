@@ -16,13 +16,13 @@ public class IsoscelesTrapezoidStraight extends Figure {
     }
 
     @Override
-    public double[] area() {
-        return new double[]{isoscelesTrapezoid(a, b, h)};
+    public double areaBase() {
+        return isoscelesTrapezoid(a, b, h);
     }
 
     @Override
     public double volume() {
-        return volume(area()[0]);
+        return volume(areaBase());
     }
 
     @Override

@@ -15,13 +15,13 @@ public class RegularHexagonStraight extends Figure {
     }
 
     @Override
-    public double[] area() {
-        return new double[] {regularHexagon(a)};
+    public double areaBase() {
+        return regularHexagon(a);
     }
 
     @Override
     public double volume() {
-        return volume(area()[0]);
+        return volume(areaBase());
     }
 
     @Override
@@ -32,3 +32,4 @@ public class RegularHexagonStraight extends Figure {
                 a);
     }
 }
+

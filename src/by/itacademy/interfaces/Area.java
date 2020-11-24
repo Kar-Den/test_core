@@ -2,7 +2,7 @@ package by.itacademy.interfaces;
 
 public interface Area {
 
-    double[] area();
+    double areaBase();
 
     default double square(double a) {
         return a * a;

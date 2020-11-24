@@ -15,13 +15,13 @@ public class RectangleStraight extends Figure {
     }
 
     @Override
-    public double[] area() {
-        return new double[]{rectangle(a, b)};
+    public double areaBase() {
+        return rectangle(a, b);
     }
 
     @Override
     public double volume() {
-        return volume(area()[0]);
+        return volume(areaBase());
     }
 
     @Override

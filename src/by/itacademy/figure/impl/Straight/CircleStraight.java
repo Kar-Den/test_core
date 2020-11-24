@@ -14,13 +14,13 @@ public class CircleStraight extends Figure {
     }
 
     @Override
-    public double[] area() {
-        return new double[]{circle(r)};
+    public double areaBase() {
+        return circle(r);
     }
 
     @Override
     public double volume() {
-        return volume(area()[0]);
+        return volume(areaBase());
     }
 
     @Override
@@ -31,3 +31,4 @@ public class CircleStraight extends Figure {
                 r);
     }
 }
+

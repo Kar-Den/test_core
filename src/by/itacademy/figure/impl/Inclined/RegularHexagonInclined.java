@@ -1,11 +1,12 @@
 package by.itacademy.figure.impl.Inclined;
 
 import by.itacademy.figure.Figure;
+import by.itacademy.interfaces.Inclineble;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class RegularHexagonInclined extends Figure {
+public class RegularHexagonInclined extends Figure implements Inclineble {
     private final double a1, a2;
 
     public RegularHexagonInclined(double a1, double a2, FluidType fluidType) {
@@ -15,13 +16,17 @@ public class RegularHexagonInclined extends Figure {
     }
 
     @Override
-    public double[] area() {
-        return new double[] {regularHexagon(a1), regularHexagon(a2)};
+    public double areaBase() {
+        return regularHexagon(a1);
+    }
+
+    public double areaTop() {
+        return regularHexagon(a2);
     }
 
     @Override
     public double volume() {
-        return volume(area()[0], area()[1]);
+        return volume(areaBase(), areaTop());
     }
 
     @Override

@@ -1,10 +1,12 @@
 package by.itacademy.figure.impl.Inclined;
 
 import by.itacademy.figure.Figure;
+import by.itacademy.interfaces.Inclineble;
 import by.itacademy.type.FluidType;
+
 import java.util.Locale;
 
-public class SquareInclined extends Figure {
+public class SquareInclined extends Figure implements Inclineble {
     private final double a1, a2;
 
     public SquareInclined(double a1, double a2, FluidType fluidType) {
@@ -14,13 +16,17 @@ public class SquareInclined extends Figure {
     }
 
     @Override
-    public double[] area() {
-        return new double[] {square(a1), square(a2)};
+    public double areaBase() {
+        return square(a1);
+    }
+
+    public double areaTop() {
+        return square(a2);
     }
 
     @Override
     public double volume() {
-        return volume(area()[0], area()[1]);
+        return volume(areaBase(), areaTop());
     }
 
     @Override
@@ -30,5 +36,4 @@ public class SquareInclined extends Figure {
                 super.toString() + " a1 = %-8.2f a2 = %.2f",
                 a1, a2);
     }
-
 }

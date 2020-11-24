@@ -57,7 +57,7 @@ public class Main {
         double maxMassKerosene = 0;
         double massTemp;
         for (Figure item : figureList){
-            if (item.getFluidType()==FluidType.KEROSENE){
+            if (item.isKerosene()){
                 massTemp=item.mass();
                 if (massTemp>maxMassKerosene){
                     maxMassKerosene = massTemp;

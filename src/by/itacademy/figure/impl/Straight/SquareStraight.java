@@ -2,6 +2,7 @@ package by.itacademy.figure.impl.Straight;
 
 import by.itacademy.figure.Figure;
 import by.itacademy.type.FluidType;
+
 import java.util.Locale;
 
 public class SquareStraight extends Figure {
@@ -13,13 +14,13 @@ public class SquareStraight extends Figure {
     }
 
     @Override
-    public double[] area() {
-        return new double[]{square(a)};
+    public double areaBase() {
+        return square(a);
     }
 
     @Override
     public double volume() {
-        return volume(area()[0]);
+        return volume(areaBase());
     }
 
     @Override
@@ -30,3 +31,5 @@ public class SquareStraight extends Figure {
                 a);
     }
 }
+
+

@@ -19,8 +19,9 @@ public abstract class Figure implements Area, Volume, Mass {
         return mass(fluidType, volume());
     }
 
-    public FluidType getFluidType() {
-        return fluidType;
+    public boolean isKerosene(){
+        if (this.fluidType==FluidType.KEROSENE) return true;
+        else return false;
     }
 
     public String toString() {
