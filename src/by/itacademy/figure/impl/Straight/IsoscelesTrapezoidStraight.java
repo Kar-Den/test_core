@@ -21,10 +21,15 @@ public class IsoscelesTrapezoidStraight extends Figure {
     }
 
     @Override
+    public double volume() {
+        return volume(area()[0]);
+    }
+
+    @Override
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + "a = %-8.2f b = %-8.2f h =%.2f",
+                super.toString() + " a = %-8.2f b = %-8.2f h =%.2f",
                 a, b, h);
     }
 }

@@ -20,6 +20,11 @@ public class RectangleStraight extends Figure {
     }
 
     @Override
+    public double volume() {
+        return volume(area()[0]);
+    }
+
+    @Override
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),

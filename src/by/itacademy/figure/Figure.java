@@ -15,11 +15,6 @@ public abstract class Figure implements Area, Volume, Mass {
     }
 
     @Override
-    public double volume() {
-        return volume(area());
-    }
-
-    @Override
     public double mass() {
         return mass(fluidType, volume());
     }
