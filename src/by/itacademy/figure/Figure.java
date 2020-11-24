@@ -19,6 +19,10 @@ public abstract class Figure implements Area, Volume, Mass {
         return mass(fluidType, volume());
     }
 
+    public FluidType getFluidType() {
+        return fluidType;
+    }
+
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),

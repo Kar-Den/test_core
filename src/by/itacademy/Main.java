@@ -9,8 +9,7 @@ import by.itacademy.figure.impl.Straight.*;
 import by.itacademy.figure.impl.Inclined.SquareInclined;
 import by.itacademy.type.FluidType;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -52,5 +51,19 @@ public class Main {
 
         figureList.sort(new FigureComparator());
         figureList.forEach(System.out::println);
+
+        System.out.println();
+        System.out.println("наибольшая масса керосина:");
+        double maxMassKerosene = 0;
+        double massTemp;
+        for (Figure item : figureList){
+            if (item.getFluidType()==FluidType.KEROSENE){
+                massTemp=item.mass();
+                if (massTemp>maxMassKerosene){
+                    maxMassKerosene = massTemp;
+                }
+            }
+        }
+        System.out.println(maxMassKerosene);
     }
 }
