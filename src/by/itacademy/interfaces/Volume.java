@@ -7,8 +7,4 @@ public interface Volume {
     default double volume(double baseSquare){
         return baseSquare * HEIGHT;
     }
-
-//    default double volume(double baseSquare1, double baseSquare2){
-//        return (baseSquare1 + Math.sqrt(baseSquare1 * baseSquare2) + baseSquare2) * HEIGHT / 3;
-//    }
 }

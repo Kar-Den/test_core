@@ -2,7 +2,6 @@ package by.itacademy.capacity.impl.Straight;
 
 import by.itacademy.capacity.Capacity;
 import by.itacademy.type.FluidType;
-
 import java.util.Locale;
 
 public class SquareStraight extends Capacity {

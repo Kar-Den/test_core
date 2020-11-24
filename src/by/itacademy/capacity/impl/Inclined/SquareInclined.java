@@ -3,7 +3,6 @@ package by.itacademy.capacity.impl.Inclined;
 import by.itacademy.capacity.Capacity;
 import by.itacademy.interfaces.Inclineble;
 import by.itacademy.type.FluidType;
-
 import java.util.Locale;
 
 public class SquareInclined extends Capacity implements Inclineble {
