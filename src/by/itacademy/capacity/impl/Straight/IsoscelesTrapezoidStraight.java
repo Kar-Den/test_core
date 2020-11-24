@@ -1,6 +1,6 @@
-package by.itacademy.figure.impl.Straight;
+package by.itacademy.capacity.impl.Straight;
 
-import by.itacademy.figure.Capacity;
+import by.itacademy.capacity.Capacity;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;

@@ -1,22 +1,21 @@
-package by.itacademy.figure.impl.Straight;
+package by.itacademy.capacity.impl.Straight;
 
-import by.itacademy.figure.Capacity;
+import by.itacademy.capacity.Capacity;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class RegularHexagonStraight extends Capacity {
+public class CircleStraight extends Capacity {
+    private final double r;
 
-    private final double a;
-
-    public RegularHexagonStraight(double a, FluidType fluidType) {
+    public CircleStraight(double r, FluidType fluidType) {
         super(fluidType);
-        this.a = a;
+        this.r = r;
     }
 
     @Override
     public double areaBase() {
-        return regularHexagon(a);
+        return circle(r);
     }
 
     @Override
@@ -28,8 +27,8 @@ public class RegularHexagonStraight extends Capacity {
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + " a = %-8.2f",
-                a);
+                super.toString() + " r = %-8.2f",
+                r);
     }
 }
 

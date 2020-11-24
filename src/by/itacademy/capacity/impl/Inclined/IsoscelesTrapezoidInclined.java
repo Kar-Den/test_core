@@ -1,6 +1,6 @@
-package by.itacademy.figure.impl.Inclined;
+package by.itacademy.capacity.impl.Inclined;
 
-import by.itacademy.figure.Capacity;
+import by.itacademy.capacity.Capacity;
 import by.itacademy.interfaces.Inclineble;
 import by.itacademy.type.FluidType;
 

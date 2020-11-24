@@ -1,21 +1,22 @@
-package by.itacademy.figure.impl.Straight;
+package by.itacademy.capacity.impl.Straight;
 
-import by.itacademy.figure.Capacity;
+import by.itacademy.capacity.Capacity;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class SquareStraight extends Capacity {
+public class RegularHexagonStraight extends Capacity {
+
     private final double a;
 
-    public SquareStraight(double a, FluidType fluidType) {
+    public RegularHexagonStraight(double a, FluidType fluidType) {
         super(fluidType);
         this.a = a;
     }
 
     @Override
     public double areaBase() {
-        return square(a);
+        return regularHexagon(a);
     }
 
     @Override
@@ -31,5 +32,4 @@ public class SquareStraight extends Capacity {
                 a);
     }
 }
-
 

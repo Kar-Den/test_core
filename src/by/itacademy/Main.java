@@ -1,12 +1,12 @@
 package by.itacademy;
 
-import by.itacademy.comparator.FigureComparator;
-import by.itacademy.figure.Capacity;
-import by.itacademy.figure.impl.Inclined.CircleInclined;
-import by.itacademy.figure.impl.Inclined.IsoscelesTrapezoidInclined;
-import by.itacademy.figure.impl.Inclined.RegularHexagonInclined;
-import by.itacademy.figure.impl.Straight.*;
-import by.itacademy.figure.impl.Inclined.SquareInclined;
+import by.itacademy.comparator.CapacityComparator;
+import by.itacademy.capacity.Capacity;
+import by.itacademy.capacity.impl.Inclined.CircleInclined;
+import by.itacademy.capacity.impl.Inclined.IsoscelesTrapezoidInclined;
+import by.itacademy.capacity.impl.Inclined.RegularHexagonInclined;
+import by.itacademy.capacity.impl.Straight.*;
+import by.itacademy.capacity.impl.Inclined.SquareInclined;
 import by.itacademy.type.FluidType;
 
 import java.util.*;
@@ -49,7 +49,7 @@ public class Main {
         figureList.add(circleInclined);
 
 
-        figureList.sort(new FigureComparator());
+        figureList.sort(new CapacityComparator());
         figureList.forEach(System.out::println);
 
         System.out.println();

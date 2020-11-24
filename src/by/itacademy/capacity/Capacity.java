@@ -1,4 +1,4 @@
-package by.itacademy.figure;
+package by.itacademy.capacity;
 
 import by.itacademy.interfaces.Area;
 import by.itacademy.interfaces.Mass;

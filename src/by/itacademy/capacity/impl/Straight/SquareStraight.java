@@ -1,21 +1,21 @@
-package by.itacademy.figure.impl.Straight;
+package by.itacademy.capacity.impl.Straight;
 
-import by.itacademy.figure.Capacity;
+import by.itacademy.capacity.Capacity;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class CircleStraight extends Capacity {
-    private final double r;
+public class SquareStraight extends Capacity {
+    private final double a;
 
-    public CircleStraight(double r, FluidType fluidType) {
+    public SquareStraight(double a, FluidType fluidType) {
         super(fluidType);
-        this.r = r;
+        this.a = a;
     }
 
     @Override
     public double areaBase() {
-        return circle(r);
+        return square(a);
     }
 
     @Override
@@ -27,8 +27,9 @@ public class CircleStraight extends Capacity {
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + " r = %-8.2f",
-                r);
+                super.toString() + " a = %-8.2f",
+                a);
     }
 }
+
 

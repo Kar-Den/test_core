@@ -1,27 +1,27 @@
-package by.itacademy.figure.impl.Inclined;
+package by.itacademy.capacity.impl.Inclined;
 
-import by.itacademy.figure.Capacity;
+import by.itacademy.capacity.Capacity;
 import by.itacademy.interfaces.Inclineble;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class CircleInclined extends Capacity implements Inclineble {
-    private final double r1, r2;
+public class SquareInclined extends Capacity implements Inclineble {
+    private final double a1, a2;
 
-    public CircleInclined(double r1, double r2, FluidType fluidType) {
+    public SquareInclined(double a1, double a2, FluidType fluidType) {
         super(fluidType);
-        this.r1 = r1;
-        this.r2 = r2;
+        this.a1 = a1;
+        this.a2 = a2;
     }
 
     @Override
     public double areaBase() {
-        return circle(r1);
+        return square(a1);
     }
 
     public double areaTop() {
-        return circle(r2);
+        return square(a2);
     }
 
     @Override
@@ -33,7 +33,7 @@ public class CircleInclined extends Capacity implements Inclineble {
     public String toString() {
         return String.format(
                 new Locale("ru-Ru"),
-                super.toString() + " r1 = %-8.2f r2 = %.2f",
-                r1, r2);
+                super.toString() + " a1 = %-8.2f a2 = %.2f",
+                a1, a2);
     }
 }
