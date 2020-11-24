@@ -1,11 +1,11 @@
 package by.itacademy.figure.impl.Straight;
 
-import by.itacademy.figure.Figure;
+import by.itacademy.figure.Capacity;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class RectangleStraight extends Figure {
+public class RectangleStraight extends Capacity {
     private final double a, b;
 
     public RectangleStraight(double a, double b, FluidType fluidType) {

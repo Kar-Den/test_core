@@ -1,12 +1,12 @@
 package by.itacademy.figure.impl.Inclined;
 
-import by.itacademy.figure.Figure;
+import by.itacademy.figure.Capacity;
 import by.itacademy.interfaces.Inclineble;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class IsoscelesTrapezoidInclined extends Figure implements Inclineble {
+public class IsoscelesTrapezoidInclined extends Capacity implements Inclineble {
     private final double a1, b1, h1,
             a2, b2, h2;
 

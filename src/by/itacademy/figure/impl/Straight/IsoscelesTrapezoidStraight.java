@@ -1,11 +1,11 @@
 package by.itacademy.figure.impl.Straight;
 
-import by.itacademy.figure.Figure;
+import by.itacademy.figure.Capacity;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class IsoscelesTrapezoidStraight extends Figure {
+public class IsoscelesTrapezoidStraight extends Capacity {
     private final double a, b, h;
 
     public IsoscelesTrapezoidStraight(double a, double b, double h, FluidType fluidType) {

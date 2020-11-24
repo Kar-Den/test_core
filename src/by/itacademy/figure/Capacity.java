@@ -7,10 +7,10 @@ import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public abstract class Figure implements Area, Volume, Mass {
+public abstract class Capacity implements Area, Volume, Mass {
     protected FluidType fluidType;
 
-    public Figure(FluidType fluidType) {
+    public Capacity(FluidType fluidType) {
         this.fluidType = fluidType;
     }
 

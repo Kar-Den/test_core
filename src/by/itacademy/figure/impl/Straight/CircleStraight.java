@@ -1,11 +1,11 @@
 package by.itacademy.figure.impl.Straight;
 
-import by.itacademy.figure.Figure;
+import by.itacademy.figure.Capacity;
 import by.itacademy.type.FluidType;
 
 import java.util.Locale;
 
-public class CircleStraight extends Figure {
+public class CircleStraight extends Capacity {
     private final double r;
 
     public CircleStraight(double r, FluidType fluidType) {
